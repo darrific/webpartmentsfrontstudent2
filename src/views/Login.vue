@@ -1,7 +1,7 @@
 <template>
   <div class="reset">
     <div class="container">
-      <h4>Reset Password</h4>
+      <h4>Login</h4>
         <div class="row">
           <div class="col s12">
             <div class="row">

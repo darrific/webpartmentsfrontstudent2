@@ -6,19 +6,13 @@
           <div class="col s12">
             <div class="row">
               <div class="input-field col s12">
-                <input type="text" id="username-input" class="username">
-                <label for="username-input">Username</label>
+                <input type="text" class="email">
+                <label for="email-input">Email</label>
               </div>
             </div>
             <div class="row">
               <div class="input-field col s12">
-                <input type="password" class="password">
-                <label for="password-input">Password</label>
-              </div>
-            </div>
-            <div class="row">
-              <div class="input-field col s12">
-                <button type="button" class="button" onclick="alert('Password reset!')">Reset</button>
+                <button type="button" class="button" onclick="alert('Check your email for reset link!')">Reset</button>
               </div>
             </div>
           </div>
