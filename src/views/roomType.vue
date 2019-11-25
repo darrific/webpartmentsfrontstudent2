@@ -200,6 +200,76 @@
               <i class="material-icons left-align">close</i>
             </div>
           </div>
+          <div class="row amenities">
+            <div class="col s2"> 
+              <i class="material-icons">hot_tub</i>
+            </div>
+            <div class="col s4">
+              <p class="left-align">
+                <b>Private Kitchen</b>
+              </p>
+            </div>
+            <div class="col s2">
+              <i class="material-icons left-align">close</i>
+            </div>
+          </div>
+          <div class="row amenities">
+            <div class="col s2"> 
+              <i class="material-icons">hot_tub</i>
+            </div>
+            <div class="col s4">
+              <p class="left-align">
+                <b>Communal Kitchen</b>
+              </p>
+            </div>
+            <div class="col s2">
+              <i class="material-icons left-align">check_circle</i>
+            </div>
+          </div>
+          <div class="row amenities">
+            <div class="col s2"> 
+              <i class="material-icons">hot_tub</i>
+            </div>
+            <div class="col s4">
+              <p class="left-align">
+                <b>Private bathroom</b>
+              </p>
+            </div>
+            <div class="col s2">
+              <i class="material-icons left-align">close</i>
+            </div>
+          </div>
+          <div class="row amenities">
+            <div class="col s2"> 
+              <i class="material-icons">hot_tub</i>
+            </div>
+            <div class="col s4">
+              <p class="left-align">
+                <b>Communal bathroom</b>
+              </p>
+            </div>
+            <div class="col s2">
+              <i class="material-icons left-align">check_circle</i>
+            </div>
+          </div>
+          <div class="row amenities">
+            <div class="col s2"> 
+              <i class="material-icons">hot_tub</i>
+            </div>
+            <div class="col s4">
+              <p class="left-align">
+                <b>Smoke Detector</b>
+              </p>
+            </div>
+            <div class="col s2">
+              <i class="material-icons left-align">close</i>
+            </div>
+          </div>
+          <div class="row amenities">
+            <div class="col s12">
+              <p class="left-align">*Also includes a fully equipped kitchenet, coat hanger and a shoe rack.</p>
+            </div>
+          </div>
         </div>
       </div>
       <div class="row">
@@ -284,6 +354,6 @@ export default {
   }
 
   .amenities{
-    line-height: 10%;
+    line-height: 100%;
   }
 </style>

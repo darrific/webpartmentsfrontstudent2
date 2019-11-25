@@ -5,7 +5,7 @@
       <div class="row">
         <div class="col xl12 s12">
           <h4 class="left-align">Blue Mountain State</h4>  
-          <h5 class="left-align">Address goes here</h5>
+          <h5 class="left-align">Address</h5>
         </div>
       </div>
       <div class="row">
@@ -55,18 +55,231 @@
               <i class="material-icons left-align">check_circle</i>
             </div>
           </div>
+          <div class="row amenities">
+            <div class="col s2"> 
+              <i class="material-icons">local_taxi</i>
+            </div>
+            <div class="col s4">
+              <p class="left-align">
+                <b>Parking</b>
+              </p>
+            </div>
+            <div class="col s2">
+              <i class="material-icons left-align">check_circle</i>
+            </div>
+          </div>
+          <div class="row amenities">
+            <div class="col s2"> 
+              <i class="material-icons">ac_unit</i>
+            </div>
+            <div class="col s4">
+              <p class="left-align">
+                <b>A/C</b>
+              </p>
+            </div>
+            <div class="col s2">
+              <i class="material-icons left-align">close</i>
+            </div>
+          </div>
+          <div class="row amenities">
+            <div class="col s2"> 
+              <i class="material-icons">airline_seat_flat</i>
+            </div>
+            <div class="col s4">
+              <p class="left-align">
+                <b>Bed</b>
+              </p>
+            </div>
+            <div class="col s2">
+              <i class="material-icons left-align">check_circle</i>
+            </div>
+          </div>
+          <div class="row amenities">
+            <div class="col s2"> 
+              <i class="material-icons">ac_unit</i>
+            </div>
+            <div class="col s4">
+              <p class="left-align">
+                <b>Refridgerator</b>
+              </p>
+            </div>
+            <div class="col s2">
+              <i class="material-icons left-align">check_circle</i>
+            </div>
+          </div>
+          <div class="row amenities">
+            <div class="col s2"> 
+              <i class="material-icons">whatshot</i>
+            </div>
+            <div class="col s4">
+              <p class="left-align">
+                <b>Microwave</b>
+              </p>
+            </div>
+            <div class="col s2">
+              <i class="material-icons left-align">check_circle</i>
+            </div>
+          </div>
+          <div class="row amenities">
+            <div class="col s2"> 
+              <i class="material-icons">tv</i>
+            </div>
+            <div class="col s4">
+              <p class="left-align">
+                <b>TV</b>
+              </p>
+            </div>
+            <div class="col s2">
+              <i class="material-icons left-align">close</i>
+            </div>
+          </div>
+          <div class="row amenities">
+            <div class="col s2"> 
+              <i class="material-icons">airline_seat_recline_extra</i>
+            </div>
+            <div class="col s4">
+              <p class="left-align">
+                <b>Couch</b>
+              </p>
+            </div>
+            <div class="col s2">
+              <i class="material-icons left-align">close</i>
+            </div>
+          </div>
+          <div class="row amenities">
+            <div class="col s2"> 
+              <i class="material-icons">add</i>
+            </div>
+            <div class="col s4">
+              <p class="left-align">
+                <b>Desk</b>
+              </p>
+            </div>
+            <div class="col s2">
+              <i class="material-icons left-align">check_circle</i>
+            </div>
+          </div>
+          <div class="row amenities">
+            <div class="col s2"> 
+              <i class="material-icons">airline_seat_recline_normal</i>
+            </div>
+            <div class="col s4">
+              <p class="left-align">
+                <b>Chair</b>
+              </p>
+            </div>
+            <div class="col s2">
+              <i class="material-icons left-align">check_circle</i>
+            </div>
+          </div>
+          <div class="row amenities">
+            <div class="col s2"> 
+              <i class="material-icons">add</i>
+            </div>
+            <div class="col s4">
+              <p class="left-align">
+                <b>Wardrobe</b>
+              </p>
+            </div>
+            <div class="col s2">
+              <i class="material-icons left-align">check_circle</i>
+            </div>
+          </div>
+          <div class="row amenities">
+            <div class="col s2"> 
+              <i class="material-icons">hot_tub</i>
+            </div>
+            <div class="col s4">
+              <p class="left-align">
+                <b>Hot water</b>
+              </p>
+            </div>
+            <div class="col s2">
+              <i class="material-icons left-align">close</i>
+            </div>
+          </div>
+          <div class="row amenities">
+            <div class="col s2"> 
+              <i class="material-icons">hot_tub</i>
+            </div>
+            <div class="col s4">
+              <p class="left-align">
+                <b>Private Kitchen</b>
+              </p>
+            </div>
+            <div class="col s2">
+              <i class="material-icons left-align">close</i>
+            </div>
+          </div>
+          <div class="row amenities">
+            <div class="col s2"> 
+              <i class="material-icons">hot_tub</i>
+            </div>
+            <div class="col s4">
+              <p class="left-align">
+                <b>Communal Kitchen</b>
+              </p>
+            </div>
+            <div class="col s2">
+              <i class="material-icons left-align">check_circle</i>
+            </div>
+          </div>
+          <div class="row amenities">
+            <div class="col s2"> 
+              <i class="material-icons">hot_tub</i>
+            </div>
+            <div class="col s4">
+              <p class="left-align">
+                <b>Private bathroom</b>
+              </p>
+            </div>
+            <div class="col s2">
+              <i class="material-icons left-align">close</i>
+            </div>
+          </div>
+          <div class="row amenities">
+            <div class="col s2"> 
+              <i class="material-icons">hot_tub</i>
+            </div>
+            <div class="col s4">
+              <p class="left-align">
+                <b>Communal bathroom</b>
+              </p>
+            </div>
+            <div class="col s2">
+              <i class="material-icons left-align">check_circle</i>
+            </div>
+          </div>
+          <div class="row amenities">
+            <div class="col s2"> 
+              <i class="material-icons">hot_tub</i>
+            </div>
+            <div class="col s4">
+              <p class="left-align">
+                <b>Smoke Detector</b>
+              </p>
+            </div>
+            <div class="col s2">
+              <i class="material-icons left-align">close</i>
+            </div>
+          </div>
+          <div class="row amenities">
+            <div class="col s12">
+              <p class="left-align">*Also includes a fully equipped kitchenet, coat hanger and a shoe rack.</p>
+            </div>
+          </div>
         </div>
       </div>
       <div class="row">
         <div class="col s12">
           <h4 class="left-align">Gallery</h4>
           <div class="row">
-            <div class="col s4"><img src="img1.jpeg" alt="" class="materialboxed gallery-image "></div>
-            <div class="col s4"><img src="img1.jpeg" alt="" class="materialboxed gallery-image"></div>
-            <div class="col s4"><img src="img1.jpeg" alt="" class="materialboxed gallery-image"></div>
-            <div class="col s4"><img src="img1.jpeg" alt="" class="materialboxed gallery-image"></div>
-            <div class="col s4"><img src="img1.jpeg" alt="" class="materialboxed gallery-image"></div>
-            <div class="col s4"><img src="img1.jpeg" alt="" class="materialboxed gallery-image"></div>
+            <div class="col s4"><img src="onebedroom.jpg" class="materialboxed gallery-image "></div>
+            <div class="col s4"><img src="onebedroom1.jpg" class="materialboxed gallery-image"></div>
+            <div class="col s4"><img src="studio1.jpg" class="materialboxed gallery-image"></div>
+            <div class="col s4"><img src="onebedroom2.jpg" class="materialboxed gallery-image"></div>
+            <div class="col s4"><img src="studio2.jpg" class="materialboxed gallery-image"></div>
+            <div class="col s4"><img src="onebedroom3.jpg" class="materialboxed gallery-image"></div>
           </div>
         </div>
       </div>
@@ -74,19 +287,16 @@
         <div class="col s12">
           <h4 class="left-align">Rooms</h4>
           <div class="row">
-            <div class="col s4"><img src="img1.jpeg" class="room-image"></div>
-            <div class="col s4 room-text">Studio</div>
-            <div class="col s4"><i class="material-icons left-align">check_circle</i></div>
+            <div class="col s4"><i class="material-icons left-align">event_seat</i></div>
+            <div class="col s1 room-text left-align">Studio</div>
           </div>
           <div class="row">
-            <div class="col s4"><img src="img1.jpeg" class="room-image"></div>
-            <div class="col s4 room-text">One Bedroom</div>
-            <div class="col s4"><i class="material-icons left-align">check_circle</i></div>
+            <div class="col s4"><i class="material-icons left-align">person</i></div>
+            <div class="col s4 room-text left-align">One Bedroom</div>
           </div>
           <div class="row">
-            <div class="col s4"><img src="img1.jpeg" class="room-image"></div>
-            <div class="col s4 room-text">Two Bedroom</div>
-            <div class="col s4"><i class="material-icons left-align">close</i></div>
+             <div class="col s4"><i class="material-icons left-align">people</i></div>
+            <div class="col s4 room-text left-align">Two Bedroom</div>
           </div>
         </div>
       </div>
@@ -154,8 +364,9 @@ export default {
   }
 
   .gallery-image{
-    width:100%;
+    width:115%;
     margin-bottom: 20px;
+    height:90px;
   }
 
   .room-image{
@@ -169,5 +380,9 @@ export default {
   .profilePic{
     width:30px;
     border-radius: 50%
+  }
+
+    .amenities{
+    line-height: 100%;
   }
 </style>

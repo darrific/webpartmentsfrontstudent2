@@ -33,8 +33,39 @@ const routes = [
     // this generates a separate chunk (Building.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "Building" */ '../views/Building.vue')
+  },
+  {
+    path: '/Login',
+    name: 'Login',
+    // route level code-splitting
+    // this generates a separate chunk (Building.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "Building" */ '../views/Login.vue')
+  },
+  {
+    path: '/signUp',
+    name: 'signUp',
+    // route level code-splitting
+    // this generates a separate chunk (Building.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "Building" */ '../views/signUp.vue')
+  },
+  {
+    path: '/forgetPass',
+    name: 'forgetPass',
+    // route level code-splitting
+    // this generates a separate chunk (Building.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "Building" */ '../views/forgetPass.vue')
+  },
+  {
+    path: '/resetPass',
+    name: 'resetPass',
+    // route level code-splitting
+    // this generates a separate chunk (Building.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "Building" */ '../views/resetPass.vue')
   }
-
 
 ]
 

@@ -4,7 +4,11 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
       <router-link to="/Building">Building</router-link> |
-      <router-link to="/roomType">roomType</router-link>
+      <router-link to="/roomType">roomType</router-link> |
+      <router-link to="/Login">Login</router-link> |
+      <router-link to="/signUp">signUp</router-link> |
+      <router-link to="/forgetPass">forgetPass</router-link> |
+      <router-link to="/resetPass">resetPass</router-link>
     </div>
     <router-view/>
   </div>
