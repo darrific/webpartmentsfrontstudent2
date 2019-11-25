@@ -44,7 +44,7 @@
       <div class="row">
         <div class="col s12">
           <h4 class="left-align">Amenities</h4>
-          <div class="row">
+          <div class="row amenities">
             <div class="col s2"> 
               <i class="material-icons">wifi</i>
             </div>
@@ -57,20 +57,20 @@
               <i class="material-icons left-align">check_circle</i>
             </div>
           </div>
-          <div class="row">
+          <div class="row amenities">
             <div class="col s2"> 
               <i class="material-icons">local_taxi</i>
             </div>
             <div class="col s4">
               <p class="left-align">
-                <b>Parking available</b>
+                <b>Parking</b>
               </p>
             </div>
             <div class="col s2">
               <i class="material-icons left-align">check_circle</i>
             </div>
           </div>
-          <div class="row">
+          <div class="row amenities">
             <div class="col s2"> 
               <i class="material-icons">ac_unit</i>
             </div>
@@ -83,7 +83,7 @@
               <i class="material-icons left-align">close</i>
             </div>
           </div>
-           <div class="row">
+           <div class="row amenities">
             <div class="col s2"> 
               <i class="material-icons">airline_seat_flat</i>
             </div>
@@ -96,7 +96,7 @@
               <i class="material-icons left-align">check_circle</i>
             </div>
           </div>
-           <div class="row">
+           <div class="row amenities">
             <div class="col s2"> 
               <i class="material-icons">ac_unit</i>
             </div>
@@ -109,7 +109,7 @@
               <i class="material-icons left-align">check_circle</i>
             </div>
           </div>
-           <div class="row">
+           <div class="row amenities">
             <div class="col s2"> 
               <i class="material-icons">whatshot</i>
             </div>
@@ -122,7 +122,7 @@
               <i class="material-icons left-align">check_circle</i>
             </div>
           </div>
-           <div class="row">
+           <div class="row amenities">
             <div class="col s2"> 
               <i class="material-icons">tv</i>
             </div>
@@ -135,7 +135,7 @@
               <i class="material-icons left-align">close</i>
             </div>
           </div>
-           <div class="row">
+           <div class="row amenities">
             <div class="col s2"> 
               <i class="material-icons">airline_seat_recline_extra</i>
             </div>
@@ -148,9 +148,9 @@
               <i class="material-icons left-align">close</i>
             </div>
           </div>
-           <div class="row">
+           <div class="row amenities">
             <div class="col s2"> 
-              <i class="material-icons">ac_unit</i>
+              <i class="material-icons">add</i>
             </div>
             <div class="col s4">
               <p class="left-align">
@@ -161,7 +161,7 @@
               <i class="material-icons left-align">check_circle</i>
             </div>
           </div>
-           <div class="row">
+           <div class="row amenities">
             <div class="col s2"> 
               <i class="material-icons">airline_seat_recline_normal</i>
             </div>
@@ -174,9 +174,9 @@
               <i class="material-icons left-align">check_circle</i>
             </div>
           </div>
-           <div class="row">
+           <div class="row amenities">
             <div class="col s2"> 
-              <i class="material-icons">ac_unit</i>
+              <i class="material-icons">add</i>
             </div>
             <div class="col s4">
               <p class="left-align">
@@ -187,7 +187,7 @@
               <i class="material-icons left-align">check_circle</i>
             </div>
           </div>
-           <div class="row">
+           <div class="row amenities">
             <div class="col s2"> 
               <i class="material-icons">hot_tub</i>
             </div>
@@ -281,5 +281,9 @@ export default {
   .living{
     height:115px;
     width:80px;
+  }
+
+  .amenities{
+    line-height: 10%;
   }
 </style>
