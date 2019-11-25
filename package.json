@@ -42,6 +42,10 @@
       "eslint:recommended"
     ],
     "rules": {},
+    "globals": {
+      "$": true,
+      "jQuery": true
+    },
     "parserOptions": {
       "parser": "babel-eslint"
     },
