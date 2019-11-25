@@ -10,8 +10,8 @@
       <div class="row">
         <div class="col xl4 s4 grey quickbox">
           <h4>
-            <i class="material-icons">attach_money</i>
-            <i class="material-icons">attach_money</i>
+            <i class="material-icons">monetization_on</i>
+            <i class="material-icons">monetization_on</i>
           </h4>
           <p>Price</p>
         </div>
@@ -77,6 +77,123 @@
             <div class="col s4">
               <p class="left-align">
                 <b>A/C</b>
+              </p>
+            </div>
+            <div class="col s2">
+              <i class="material-icons left-align">close</i>
+            </div>
+          </div>
+           <div class="row">
+            <div class="col s2"> 
+              <i class="material-icons">airline_seat_flat</i>
+            </div>
+            <div class="col s4">
+              <p class="left-align">
+                <b>Bed</b>
+              </p>
+            </div>
+            <div class="col s2">
+              <i class="material-icons left-align">check_circle</i>
+            </div>
+          </div>
+           <div class="row">
+            <div class="col s2"> 
+              <i class="material-icons">ac_unit</i>
+            </div>
+            <div class="col s4">
+              <p class="left-align">
+                <b>Refridgerator</b>
+              </p>
+            </div>
+            <div class="col s2">
+              <i class="material-icons left-align">check_circle</i>
+            </div>
+          </div>
+           <div class="row">
+            <div class="col s2"> 
+              <i class="material-icons">whatshot</i>
+            </div>
+            <div class="col s4">
+              <p class="left-align">
+                <b>Microwave</b>
+              </p>
+            </div>
+            <div class="col s2">
+              <i class="material-icons left-align">check_circle</i>
+            </div>
+          </div>
+           <div class="row">
+            <div class="col s2"> 
+              <i class="material-icons">tv</i>
+            </div>
+            <div class="col s4">
+              <p class="left-align">
+                <b>TV</b>
+              </p>
+            </div>
+            <div class="col s2">
+              <i class="material-icons left-align">close</i>
+            </div>
+          </div>
+           <div class="row">
+            <div class="col s2"> 
+              <i class="material-icons">airline_seat_recline_extra</i>
+            </div>
+            <div class="col s4">
+              <p class="left-align">
+                <b>Couch</b>
+              </p>
+            </div>
+            <div class="col s2">
+              <i class="material-icons left-align">close</i>
+            </div>
+          </div>
+           <div class="row">
+            <div class="col s2"> 
+              <i class="material-icons">ac_unit</i>
+            </div>
+            <div class="col s4">
+              <p class="left-align">
+                <b>Desk</b>
+              </p>
+            </div>
+            <div class="col s2">
+              <i class="material-icons left-align">check_circle</i>
+            </div>
+          </div>
+           <div class="row">
+            <div class="col s2"> 
+              <i class="material-icons">airline_seat_recline_normal</i>
+            </div>
+            <div class="col s4">
+              <p class="left-align">
+                <b>Chair</b>
+              </p>
+            </div>
+            <div class="col s2">
+              <i class="material-icons left-align">check_circle</i>
+            </div>
+          </div>
+           <div class="row">
+            <div class="col s2"> 
+              <i class="material-icons">ac_unit</i>
+            </div>
+            <div class="col s4">
+              <p class="left-align">
+                <b>Wardrobe</b>
+              </p>
+            </div>
+            <div class="col s2">
+              <i class="material-icons left-align">check_circle</i>
+            </div>
+          </div>
+           <div class="row">
+            <div class="col s2"> 
+              <i class="material-icons">hot_tub</i>
+            </div>
+            <div class="col s4">
+              <p class="left-align">
+                <b>Hot water</b>
               </p>
             </div>
             <div class="col s2">
