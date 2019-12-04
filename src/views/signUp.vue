@@ -2,6 +2,7 @@
   <div class="signup">
     <div class="container">
       <h4>Sign Up</h4>
+      <p>Get access to more features and reviews.</p>
         <div class="row">
           <div class="col s12">
             <div class="row">
@@ -30,7 +31,7 @@
             </div>
             <div class="row">
               <div class="input-field col s12">
-                <button type="button" class="button" onclick="alert('Sign Up Successful!')">Sign Up</button>
+                <button type="button" class="btn" onclick="alert('Sign Up Successful!')">Sign Up</button>
               </div>
             </div>
           </div>
@@ -39,15 +40,8 @@
   </div>
 </template>
 <style>
-.button{
-  color:black;
-  padding:8px 20px;
-  text-align:center;
-  text-decoration:none;
-  display:inline-block;
-  font-size:16px;
-  margin:4px 2px;
-  transition-duration:0.4s;
+.btn{
+  width: 100%;
 }
 </style>
 

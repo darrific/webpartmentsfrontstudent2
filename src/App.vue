@@ -1,19 +1,31 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/Building">Building</router-link> |
-      <router-link to="/roomType">roomType</router-link> |
-      <router-link to="/Login">Login</router-link> |
-      <router-link to="/signUp">signUp</router-link> |
-      <router-link to="/forgetPass">forgetPass</router-link> |
-      <router-link to="/resetPass">resetPass</router-link>
-    </div>
+    <nav id="nav">
+      <div class="nav-wrapper">
+        <div class="container">
+          <router-link to="/" class="brand-logo center">WebPartments</router-link>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><router-link to="/">Apartments</router-link></li>
+            <li><router-link to="/Bugs">Bug Reports</router-link></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+      <li><router-link to="/">Apartments</router-link></li>
+      <li><router-link to="/Bugs">Bug Reports</router-link></li>
+    </ul>
     <router-view/>
   </div>
 </template>
-
+<script>
+export default {
+  mounted(){
+    $('.sidenav').sidenav();
+  }
+}
+</script>
 <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -24,15 +36,20 @@
 }
 
 #nav {
-  padding: 30px;
+  background-color: #1a237e !important;
 }
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #fff;
+  /* font-size: 20px; */
 }
 
-#nav a.router-link-exact-active {
+#nav>a.router-link-exact-active {
   color: #42b983;
+}
+
+#logoImg {
+  margin-top: 5px;
 }
 </style>

@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
+Vue.use(require('vue-cookies'))
 
 const routes = [
   {
@@ -10,6 +11,14 @@ const routes = [
     name: 'home',
     component: Home
   },
+  // {
+  //   path: '/',
+  //   name: 'login',
+  //   // route level code-splitting
+  //   // this generates a separate chunk (Login.[hash].js) for this route
+  //   // which is lazy-loaded when the route is visited.
+  //   component: () => import(/* webpackChunkName: "Login" */ '../views/Login.vue')
+  // },
   {
     path: '/about',
     name: 'about',
@@ -19,7 +28,15 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
-    path: '/roomType',
+    path: '/bugs',
+    name: 'bugs',
+    // route level code-splitting
+    // this generates a separate chunk (bugs.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "bugs" */ '../views/Bugs.vue')
+  },
+  {
+    path: '/roomType/:id',
     name: 'roomType',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
@@ -27,7 +44,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/roomType.vue')
   },
   {
-    path: '/Building',
+    path: '/Building/:id',
     name: 'Building',
     // route level code-splitting
     // this generates a separate chunk (Building.[hash].js) for this route

@@ -7,12 +7,25 @@
             <div class="row">
               <div class="input-field col s12">
                 <input type="text" class="email">
-                <label for="email-input">Email</label>
+                <label for="email-input">Enter your email to get a reset link.</label>
+                <div class="input-field col s12">
+                  <button type="button" class="btn" onclick="alert('Check your email for reset link!')">Send Email</button>
+                </div>
               </div>
             </div>
             <div class="row">
               <div class="input-field col s12">
-                <button type="button" class="button" onclick="alert('Check your email for reset link!')">Reset</button>
+                <input type="text" class="email">
+                <label for="email-input">Enter the link we sent to your email.</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input type="text" class="email">
+                <label for="email-input">Enter your new password.</label>
+                <div class="input-field col s12">
+                  <button type="button" class="btn" onclick="alert('Check your email for reset link!')">Reset Password</button>
+                </div>
               </div>
             </div>
           </div>

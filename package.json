@@ -42,7 +42,10 @@
       "plugin:vue/essential",
       "eslint:recommended"
     ],
-    "rules": {},
+    "rules": {
+      "no-console": "off",
+      "no-unused-vars": "off"
+    },
     "globals": {
       "$": true,
       "jQuery": true
