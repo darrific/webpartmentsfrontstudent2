@@ -84,8 +84,10 @@ export default {
         email: this.email
       })
       .then(data=>{
+        this.reports.push({report: this.report, email: this.email, timestamp: "Just Now"})
         this.report = ""
         this.email = ""
+        M.toast({html: "Bug Reported."})
         console.log(data);
       })
       .catch(err=>{

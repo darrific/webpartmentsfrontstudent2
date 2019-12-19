@@ -4,7 +4,13 @@
     <div class="container mainContainer grey lighten-4">
       <div class="row">
         <div class="col l8 offset-l2 s12">
-          <h4 class="left-align">{{apt.name}}</h4>  
+          <h4 class="left-align">{{apt.name}}</h4>
+          <span v-if="!apt.status" class="new badge red" data-badge-caption="NO ROOMS AVAILABLE"></span>
+          <div class="left noRating" v-if="apt.stars==0">No Rating</div>
+          <div class="left" v-for="star in apt.stars" :key="star">
+            <i class="material-icons yellow-text text-darken-2 ">star</i>                        
+          </div>  
+          <br>  
           <p class="left-align"><i class="material-icons left">location_on</i>{{apt.address}}</p>
         </div>
       </div>
@@ -30,7 +36,7 @@
             <p class="red-text text-lighten-5">from campus</p>
           </div>
           <div class="col l2 s4 quickboxItem">
-            <h4 class="white-text">4/5</h4>
+            <h4 class="white-text">{{apt.stars}}/5</h4>
             <p class="red-text text-lighten-5">Rating</p>
           </div>
         </div>
@@ -43,7 +49,7 @@
             <i class="medium material-icons green-text">wifi</i>
             <p class="amenitiesHeading"><b>WiFi Provided</b></p>
           </div>
-          <div v-if="apt.wifiProvided" class="col l2 s4">
+          <div v-if="apt.hasAC" class="col l2 s4">
             <i class="medium material-icons green-text">ac_unit</i>
             <p class="amenitiesHeading"><b>Air Conditioning</b></p>
           </div>
@@ -59,13 +65,13 @@
             <i class="medium material-icons green-text">kitchen</i>
             <p class="amenitiesHeading"><b>Laundry Facilities</b></p>
           </div>
-          <div v-if="apt.wifiProvided" class="col l2 s4">
+          <div v-if="apt.hasHotWater" class="col l2 s4">
             <i class="medium material-icons green-text">whatshot</i>
             <p class="amenitiesHeading"><b>Hot water Provided</b></p>
           </div>
-          <div v-if="apt.securityFeatures" class="col l2 s4">
-            <i class="medium material-icons green-text">security</i>
-            <p class="amenitiesHeading"><b>Security Services</b></p>
+          <div v-if="apt.hasSecurityCameras" class="col l2 s4">
+            <i class="medium material-icons green-text">videocam</i>
+            <p class="amenitiesHeading"><b>Security Cameras</b></p>
           </div>
           <div class="col xl12 s12 left-align">
             <h5 class="left-align">Additional Features</h5>
@@ -164,10 +170,16 @@ export default {
         this.apt.gallery.forEach(img=>{
           this.buildingGallery.push("https://webpartments.nyc3.digitaloceanspaces.com/"+img);
         })
-        this.apt.comments.forEach(comment=>{
-          console.log(new Date(comment.timestamp).toDateString("en-US"))
-          console.log(comment.timestamp);
-        })
+        if(this.apt.comments.length > 0){
+          let x = [];
+          let y = 0;
+          let z = 0;
+          this.apt.comments.forEach(c=>{x.push(c.rating); z++})
+          x.forEach(val=>{y = y+val})
+          this.apt.stars = Math.round(y/z);
+        }else{
+          this.apt.stars = 0;
+        }
         $(document).ready(function(){
           $('.materialboxed').materialbox();
         })
@@ -182,10 +194,12 @@ export default {
           rating: this.userRating
         })
         .then(data=>{
-            console.log(data);
+            if(data.data.success){
+              this.apt.comments.push(data.data.data)
+              M.toast({html: "Review Posted."})
+            }
             this.userRating = "";
             this.userReview = ""
-            // M.toast({html: "Review Posted."})
         })
         .catch(err=>{
           console.log(err);

@@ -21,11 +21,12 @@
                     <img :src=apt.coverImg>
                     <span class="card-title left-align">
                       {{apt.name}}
+                      <span v-if="!apt.status" class="new badge red" data-badge-caption="NO ROOMS AVAILABLE"></span>
                       <br>
-                      <i class="material-icons yellow-text text-darken-2 ">star</i>
-                      <i class="material-icons yellow-text text-darken-2">star</i>
-                      <i class="material-icons yellow-text text-darken-2">star</i>
-                      <i class="material-icons yellow-text text-darken-2">star</i>
+                      <span class="noRating" v-if="apt.stars==0">No Rating</span>
+                      <span v-for="star in apt.stars" :key="star">
+                        <i class="material-icons yellow-text text-darken-2 ">star</i>                        
+                      </span>
                     </span>
                   </div>
                   <div class="card-content left-align">
@@ -71,11 +72,12 @@
                     <img :src=apt.coverImg>
                     <span class="card-title left-align">
                       {{apt.name}}
+                      <span v-if="!apt.status" class="new badge red" data-badge-caption="NO ROOMS AVAILABLE"></span>
                       <br>
-                      <i class="material-icons yellow-text text-darken-2 ">star</i>
-                      <i class="material-icons yellow-text text-darken-2">star</i>
-                      <i class="material-icons yellow-text text-darken-2">star</i>
-                      <i class="material-icons yellow-text text-darken-2">star</i>
+                      <span class="noRating" v-if="apt.stars==0">No Rating</span>
+                      <span v-for="star in apt.stars" :key="star">
+                        <i class="material-icons yellow-text text-darken-2 ">star</i>                        
+                      </span>
                     </span>
                   </div>
                   <div class="card-content left-align">
@@ -131,7 +133,17 @@ export default {
             this.apartments = data.data.data
             this.apartments.forEach(element => {
               element.coverImg = 'https://webpartments.nyc3.digitaloceanspaces.com/buildingCover-'+element._id;
-              element.linkOut = "/Building/"+element._id
+              element.linkOut = "/Building/"+element._id;
+              if(element.comments.length > 0){
+                let x = [];
+                let y = 0;
+                let z = 0;
+                element.comments.forEach(c=>{x.push(c.rating); z++})
+                x.forEach(val=>{y = y+val})
+                element.stars = Math.round(y/z);
+              }else{
+                element.stars = 0;
+              }
             });
         })
   },
@@ -173,6 +185,10 @@ export default {
 
   .sendButton {
     margin-top: 15px;
+  }
+
+  .noRating {
+    font-size: 10px;
   }
 
   @media only screen and (min-width: 992px) {
